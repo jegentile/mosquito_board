@@ -1,0 +1,14 @@
+,MI-3,MI-5,MA-1,CO-4,CO-7,IL-3,NJ-ALL,IA-9,IA-8,IA-15,IA-4,OH-8,IA-2
+MI-3Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+MI-5Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+MA-1Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+CO-4Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+CO-7Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+IL-3Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+NJ-ALLNan,Nan,Nan,Nan,Nan,Nan,1.0,Nan,0.543209683297,Nan,Nan,0.849875788726,0.083581452996
+IA-9Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+IA-8Nan,Nan,Nan,Nan,Nan,Nan,0.543209683297,Nan,1.0,Nan,Nan,0.445422136081,-0.359071192656
+IA-15Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+IA-4Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan,Nan
+OH-8Nan,Nan,Nan,Nan,Nan,Nan,0.849875788726,Nan,0.445422136081,Nan,Nan,1.0,-0.130447888669
+IA-2Nan,Nan,Nan,Nan,Nan,Nan,0.083581452996,Nan,-0.359071192656,Nan,Nan,-0.130447888669,1.0

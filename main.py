@@ -9,6 +9,7 @@ parser.add_argument('-f','--mosquito-population-file')
 parser.add_argument('-a','--board-a',required=False)
 parser.add_argument('-b','--board-b',required=False)
 parser.add_argument('-y','--year',type=int)
+parser.add_argument('--all-boards',required=False,action='store_true')
 
 class MosquitoBoard:
     def __init__(self,board_id,resolution):
@@ -159,8 +160,47 @@ def main():
 
 
 
+
     if args.board_a and args.board_b:
         print correlate(boards[args.board_a],boards[args.board_b],args.year)[0][1]
+
+    if args.all_boards:
+        generate_all_correlations(boards,xrange(2009,2017))
+
+def generate_all_correlations(boards,years):
+
+    keys = boards.keys()
+
+    print keys
+
+    for y in years:
+
+        file = open('correlations/{}.csv'.format(y),'w')
+
+        line = ','
+        for b1 in boards:
+            line = line+b1+','
+
+        line = line[:-1] + '\n'
+
+        file.write(line)
+
+
+        for i,b1 in enumerate(boards):
+            line = b1
+            for j,b2 in enumerate(boards):
+                try:
+                    value = correlate(boards[b1],boards[b2],y)[0][1]
+                except TypeError as e:
+                    value = 'Nan'
+                line = line+'{},'.format(value)
+
+            line = line[:-1]+'\n'
+
+            file.write(line)
+
+        file.close()
+
 
 
 
