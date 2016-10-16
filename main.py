@@ -187,7 +187,7 @@ def generate_all_correlations(boards,years):
 
 
         for i,b1 in enumerate(boards):
-            line = b1
+            line = b1+','
             for j,b2 in enumerate(boards):
                 try:
                     value = correlate(boards[b1],boards[b2],y)[0][1]
