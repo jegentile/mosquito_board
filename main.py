@@ -9,6 +9,7 @@ parser.add_argument('-f','--mosquito-population-file')
 parser.add_argument('-a','--board-a',required=False)
 parser.add_argument('-b','--board-b',required=False)
 parser.add_argument('-y','--year',type=int)
+parser.add_argument('--prefix')
 parser.add_argument('--all-boards',required=False,action='store_true')
 
 class MosquitoBoard:
@@ -165,9 +166,9 @@ def main():
         print correlate(boards[args.board_a],boards[args.board_b],args.year)[0][1]
 
     if args.all_boards:
-        generate_all_correlations(boards,xrange(2009,2017))
+        generate_all_correlations(boards,xrange(2009,2017),args.prefix)
 
-def generate_all_correlations(boards,years):
+def generate_all_correlations(boards,years,prefix):
 
     keys = boards.keys()
 
@@ -175,7 +176,7 @@ def generate_all_correlations(boards,years):
 
     for y in years:
 
-        file = open('correlations/{}.csv'.format(y),'w')
+        file = open('{0}/{1}.csv'.format(prefix,y),'w')
 
         line = ','
         for b1 in boards:
